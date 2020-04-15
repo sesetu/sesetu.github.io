@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>色色兔最新地址发布器下载</title>
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <!-- Link Swiper's CSS -->
+    <link rel="shortcut icon" href="images/logo.ico" />
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/swiper.css">
+    <!-- Demo styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.qrcode.js"></script>
+    <script src="js/utf.js"></script>
+    <style>
+        @media only screen and (max-width: 736px) {
+            *, :after, :before {
+                box-sizing: border-box;
+            }
+
+            html, body {
+                position: relative;
+                height: 100%;
+            }
+
+            body {
+                background: #eee;
+                font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+                color:#000;
+                margin: 0;
+                padding: 0;
+            }
+
+            .swiper-container {
+                width: 100%;
+                height: 100%;
+            }
+            .swiper-slide {
+                text-align: center;
+                font-size: 18px;
+                background:#fff;
+                /* Center slide text vertically */
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                -webkit-justify-content: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                -webkit-align-items: center;
+                align-items: center;
+            }
+            .swiper-slide .pics {
+                width:100%;
+                height:90%;
+                padding-bottom:2% 0 8% 0;
+            }
+            /* .swiper-container1 */
+            .mobile{
+                width: 12.225rem;
+                height: 24.722rem;
+                position:absolute;
+                top:35%;
+                left:10%;
+                z-index:999;
+                background:url(images/m-phone.png) no-repeat center;
+                background-size: cover;
+            }
+            .swiper-container1{
+                margin-left: 0.747rem;
+                margin-top: 2.83rem;
+                width:10.731rem;
+                height:19.13rem;
+            }
+            .mobile img{
+                width:100%;
+                height:100%;
+            }
+            /* .swiper-container2 */
+            .swiper-container2 .swiper-slide:nth-child(1){
+                background: url(images/m-banner11.jpg) no-repeat;
+                background-size: 100% 100%;
+            }
+            .swiper-container2 .swiper-slide:nth-child(1) img{
+                position: absolute;
+                top:10%;
+                left: 15%;
+                z-index: 999;
+                width: 70%;
+            }
+            .download img{
+                width: 100%;
+                margin-bottom: 1rem;
+            }
+            .icp {
+                position: fixed;
+                bottom: 1rem;
+                right: 2rem;
+                z-index: 1000;
+                color: #fff;
+                text-align: end;
+            }
+            /* down */
+            .down{
+                width:1.38rem;
+                height: 0.78rem;
+                position: absolute;
+                left: 50%;
+                bottom:5%;
+                margin-left:-0.69rem;
+                background-size: 100% 100%;
+                z-index: 999;
+                animation: Down 2s infinite;
+                -webkit-animation:Down 2s infinite;
+                -moz-animation:Down 2s infinite;
+                -o-animation:Down 2s infinite;
+            }
+            .weui_mask_transparent {
+                background:none;
+            }
+
+            @keyframes Down{
+                0%{bottom:8%;}
+                100%{bottom:5%;}
+            }
+            @-webkit-keyframes Down{
+                0%{bottom:8%;}
+                100%{bottom:5%;}
+            }
+            @-moz-keyframes Down{
+                0%{bottom:8%;}
+                100%{bottom:5%;}
+            }
+            @-o-keyframes Down{
+                0%{bottom:8%;}
+                100%{bottom:5%;}
+            }
+            a:focus{
+                color: #fff;
+            }
+            .center{
+                display:none;
+            }
+            #pcAlert{display:none;}
+            .logo{display:none;}
+            .download-cb {
+                margin: 0 auto;
+                max-width: 600px;
+            }
+            .content p {
+                position: relative;
+                line-height: 0;
+                margin: 0;
+                padding: 0;
+            }
+            .download-cb img {
+                width: 100%;
+            }
+            /*信任*/
+            .overlay {
+                width: 100%;
+                position: fixed;
+                bottom: 0;
+                z-index: 10000;
+            }
+            .overlay .content {
+                width: 100%;
+                padding: 10px;
+                background-color: #fff;
+                display: block;
+            }
+            .overlay .header {
+                display: block;
+                background-color: #f3f3f3;
+                text-align: center;
+                padding: 10px;
+                position: relative;
+                font-size: 14px;
+                color: #666;
+            }
+            .overlay .header a {
+                display: block;
+                position: absolute;
+                right: 10px;
+                top: 10px;
+            }
+            .overlay .content .tit {
+                margin-top: 5px;
+                font-size: 13px;
+                color: #666;
+                margin-bottom: 10px;
+            }
+            .overlay .content .sign {
+                text-decoration: none;
+                border: 1px solid #ddd;
+                border-radius: .3em;
+                padding: 7px 10px;
+                display: -webkit-box;
+                -webkit-box-pack: justify;
+                -webkit-box-align: center;
+                margin: 0 auto;
+            }
+            .overlay .sign img {
+                display: block;
+                width: 40px;
+                height: 40px;
+                margin-right: 10px;
+            }
+            .overlay .sign p.sign-name {
+                width: 80%;
+                color: #000;
+            }
+            .overlay .sign p {
+                font-size: 15px;
+                color: #b5b5bb;
+            }
+            .overlay .finger {
+                display: block;
+                width: 24px;
+                position: relative;
+                top: -15px;
+                float: right;
+                right: 0;
+                z-index: 12;
+            }
+            .overlay .btn-list {
+                display: block;
+                position: relative;
+            }
+            #btn-trust {
+                display: block;
+                margin: 30px auto 10px;
+                color: #e96b38;
+                font-size: 15px;
+                border-radius: 3em;
+                padding: 5px;
+                width: 40%;
+                text-align: center;
+                border: 1px solid #e96b38;
+                line-height: 26px;
+            }
+            #intro {
+                text-decoration: underline;
+                color: #ee272f;
+                font-size: 13px;
+                line-height: 37px;
+                position: absolute;
+                bottom: 0;
+                right: 10px;
+            }
+            .notice-good{
+                position: absolute;
+                bottom: 15%;
+                left: 50%;
+                z-index: 199;
+                width: 85%;
+                height: 70px;
+                margin-left: -150px;
+                color: #f9f9f9;
+                font-size: 15px;
+            }
+            #output{display:none;}
+        }
+        /*弹框*/
+        .alert-container {
+            display: inline-block;
+            border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            -o-border-radius: 5px;
+            background: #fff;
+            border: 1px solid #f1f1f1;
+            z-index: 99999;
+            /*overflow: hidden;*/
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            -o-box-sizing: border-box;
+            -ms-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        .alert-title {
+            font-size: 16px;
+            text-align: center;
+            line-height: 42px;
+            color: #111;
+            background: #fff;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 999;
+            width: 100%;
+            text-align: center;
+        }
+        .alert-content {
+            font-size: 14px;
+            padding: 15px 20px;
+            color: #555;
+            height: 100%;
+            overflow: auto;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            -o-box-sizing: border-box;
+            -ms-box-sizing: border-box;
+            box-sizing: border-box;
+        }.alert-btn-close {
+             position: absolute;
+             right: 10px;
+             top: 3px;
+             font-size: 24px;
+             cursor: pointer;
+             z-index: 1000;
+         }
+        canvas{margin: 52px 25px -21px 50px;}
+    </style>
+    <script>
+        function autoDownload(down) {
+            // 添加ios用户手机百度的UA判断
+            var browser = {
+                versions: function () {
+                    var u = navigator.userAgent, app = navigator.appVersion;
+                    return {         //移动终端浏览器版本信息
+                        trident: u.indexOf('Trident') > -1, //IE内核
+                        presto: u.indexOf('Presto') > -1, //opera内核
+                        webKit: u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核
+                        gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1, //火狐内核
+                        mobile: !!u.match(/AppleWebKit.*Mobile.*/), //是否为移动终端
+                        ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
+                        android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //android终端或uc浏览器
+                        iPhone: u.indexOf('iPhone') > -1, //是否为iPhone或者QQHD浏览器
+                        iPad: u.indexOf('iPad') > -1, //是否iPad
+                        webApp: u.indexOf('Safari') == -1 //是否web应该程序，没有头部与底部
+                    };
+                }(),
+                language: (navigator.browserLanguage || navigator.language).toLowerCase()
+            }
+            if (browser.versions.mobile) {//判断是否是移动设备打开。browser代码在下面
+                var ua = navigator.userAgent.toLowerCase();//获取判断用的对象
+                var u = navigator.userAgent;
+                var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
+                var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+            }
+            var systemName = getMobileOperatingSystem();//设备
+
+            urls = {
+                'android':'https://app.91500.net/sesetu2020.apk',
+                'ios':'https://app.91500.net/SeSetu.mobileconfig',
+            };
+
+            if (down === 'Android') {
+                if(isAndroid){
+                    window.location.href=urls.android;
+                }else{
+                    if (systemName === "iOS") {//提示苹果
+                        $('.alert-content').html('请点击IOS下载!');
+                        $('.mask').show();
+                        $('.bounceOut').show();
+                    }else{ //扫二维码
+                        $('.mask').show();
+                        $('.bounceOut').show();
+                    }
+                }
+            } else if (down === 'iOS') {
+                if(isiOS){
+                  //    window.location.href=urls.ios;
+                  	  window.open(urls.ios)
+                      $(".down_teacher").show();
+                }else{
+                    if (systemName === 'Android') {//提示安卓
+                        $('.alert-content').html('请点击Android下载!');
+                        $('.mask').show();
+                        $('.bounceOut').show();
+                    }else{ //扫二维码
+                        $('.mask').show();
+                        $('.bounceOut').show();
+                    }
+                }
+            }
+        }
+        function getMobileOperatingSystem() {
+            var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+            // Windows Phone must come first because its UA also contains "Android"
+            if (/windows phone/i.test(userAgent)) {
+                return "Windows Phone";
+            }
+            if (/android/i.test(userAgent)) {
+                return "Android";
+            }
+            // iOS detection from: http://stackoverflow.com/a/9039885/177710
+            if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+                return "iOS";
+            }
+            return "unknown";
+        }
+    </script>
+    <style>
+        .animated {
+            -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+        }
+        .lightSpeedIn {
+            -webkit-animation-name: lightSpeedIn;
+            animation-name: lightSpeedIn;
+            -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+        }
+        @-webkit-keyframes lightSpeedIn{from{-webkit-transform:translate3d(100%,0,0) skewX(-30deg);transform:translate3d(100%,0,0) skewX(-30deg);opacity:0}60%{-webkit-transform:skewX(20deg);transform:skewX(20deg);opacity:1}80%{-webkit-transform:skewX(-5deg);transform:skewX(-5deg);opacity:1}to{-webkit-transform:none;transform:none;opacity:1}}
+        @keyframes lightSpeedIn{from{-webkit-transform:translate3d(100%,0,0) skewX(-30deg);transform:translate3d(100%,0,0) skewX(-30deg);opacity:0}60%{-webkit-transform:skewX(20deg);transform:skewX(20deg);opacity:1}80%{-webkit-transform:skewX(-5deg);transform:skewX(-5deg);opacity:1}to{-webkit-transform:none;transform:none;opacity:1}}
+        .lightSpeedIn{-webkit-animation-name:lightSpeedIn;animation-name:lightSpeedIn;-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}
+    </style>
+</head>
+<body>
+<!-- logo -->
+<div class="logo">
+    <img style="width:200px;" src="images/logo_website2.png" alt="色色兔">
+</div>
+<!-- Swiper1 -->
+<div class='mobile'>
+    <div class="swiper-container swiper-container1">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide sildeOne">
+                <img src="images/photo_2018.jpg" alt="" width="100%" height="100%">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Swiper2 -->
+<div class="swiper-container swiper-container2">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <div  class="center">
+                <div class="cen-right" >
+                    <img class="animated lightSpeedIn" src="images/font2.png"/>
+                </div>
+            </div>
+            <img class="m-fontimg" src="images/m-ulogo.png" alt="">
+        </div>
+    </div>
+</div>
+
+<!--down teacher-->
+<div class="down_teacher" style="display:none;position: absolute; top: 0px; left: 0px; width: 100%; animation-duration: 1000ms;z-index: 9999;background: #ebebeb;">
+    <div class="download-cb">
+        <p>
+            <a target="_blank" href="https://app.91500.net/SeSetu.mobileconfig" download="">
+            <img src="images/down.jpg"></a>
+        </p>
+        <p><img src="images/shang_one.jpg"></p>
+        <p><img src="images/shang.jpg"></p>
+        <p><img src="images/two.jpg"></p>
+        <p><img src="images/three.jpg"></p>
+    </div>
+</div>
+<div class="mask"></div>
+<div class="alert-container animated pcAlert bounceOut" style="position: fixed; left: 50%; top: 50%; z-index: 99999; width: 250px; height: auto; margin-left: -109px; margin-top: -39px; display: none;"><div class="alert-title">温馨提示</div>
+    <div id="output"></div>
+    <div class="alert-content" style="text-align: center; padding-top: 42px;">请打开手机浏览器下载</div><div class="alert-btn-close">×</div></div>
+<div class="overlay" style="animation-duration: 1000ms;display:none;"><div class="content"><div class="header">安装提示<a id="btn-cancel">×</a></div><p class="tit">安装完成后，首次打开APP需要信任下方的描述文件</p><a href="SeSetu.mobileconfig" class="sign"><img src="images/setting_52.png"><p class="sign-name">Eurasia Placement Sp.zo.o.</p><p>&gt;</p></a><img src="" class="finger"><div class="btn-list"><a href="tv.mobileprovision" id="btn-trust">去信任</a><a id="intro" style="color: rgb(138, 138, 138);">详细教程&gt;</a></div></div></div>
+  <div class="btn" id="pcAlert">
+  <img src="images/download_qrcode.png" style="width:190px;height:190px;border:4px solid white"/>
+  </div>
+<div class="btn" style="display:none">
+    <a href="javascript:autoDownload('iOS');void(0);"><img class="alert-btn9" src="images/appstore.png" alt="IOS下载"></a>
+    <a href="javascript:autoDownload('Android');void(0);"><img class="alert-btn9" src="images/android.png" alt="安卓下载"></a>
+</div>
+<div class="download">
+    <a id='btn-ios' href="javascript:autoDownload('iOS');void(0);"><img src="images/m-appstore.png" alt="IOS下载"></a>
+    <a id='btn-android' href="javascript:autoDownload('Android');void(0);"><img src="images/m-android.png" alt="安卓下载"></a>
+</div>
+<div id="weixin-tip"><p><img src="images/live_weixin.png" alt="微信打开"/><span id="close" title="关闭" class="close">×</span></p></div>
+<!-- Initialize Swiper -->
+<script type="text/javascript">
+
+    $(function() {
+        $(".alert-btn-close").click(function(){
+            $('.mask').hide();
+            $('.bounceOut').hide();
+            return false;
+        })
+        $("#btn-cancel").click(function(){
+            $('.mask').hide();
+            $('.overlay').slideUp('slow');
+            return false;
+        })
+        $("#intro").click(function(){
+            $('.mask').hide();
+            $('.overlay').slideUp('slow');
+            return false;
+        })
+    });
+
+    var is_weixin = (function() {
+        var ua = navigator.userAgent.toLowerCase();
+        if (ua.match(/MicroMessenger/i) == "micromessenger") {
+            return true;
+        } else {
+            return false;
+        }
+    })();
+
+    $("#close").click(function() {
+        $('#weixin-tip').hide();
+    });
+
+    window.onload = function(){
+        var winHeight = typeof window.innerHeight != 'undefined' ? window.innerHeight : document.documentElement.clientHeight;
+        var tip = $('#weixin-tip').css("display");
+        var close = document.getElementById('close');
+        if(is_weixin){
+            $('#weixin-tip').height = winHeight + 'px';
+            $('#weixin-tip').show();
+            return false;
+        }
+    }
+
+</script>
+     <div style="display:none;"><script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?62da0253f50edfb9beea69c734c297a7";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</div>
+</body>
+</html>
