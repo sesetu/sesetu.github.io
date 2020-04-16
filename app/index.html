@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=yes">
+<title></title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="app.png">
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/style.css">
+<script type="text/javascript" src="css/flexible.js"></script>
+<script type="text/javascript">
+$(function(){
+	$('.inner .tabBox').hide();
+	$('.inner .tabBox').eq(0).show();
+	$('.inner .tabUl li a').click(function(){
+		var ind=$(this).parent('li').index();
+		$(this).parent('li').addClass('on').siblings().removeClass('on');
+		$('.tabBox').hide();		
+		$('.tabBox:eq('+ind+')').show();
+		return false;
+	});	
+});
+</script>
+<body>
+<!--[if lt IE 8]>
+<p class="browserupgrade">当前浏览器版本太低,建议升级道最新版本</p>
+<![endif]-->
+<div id="container">
+  <div id="header">
+    <div class="logo"><a href="#"><img src="images/logo.jpg" alt=""></a></div>
+  </div>
+  <div id="main">
+    <ul class="imgUl clearfix">
+      <li><a href="https://www.sesetu1.com" target="_blank"><img src="images/img1.png" alt=""><span>色兔一站</span></a></li>
+      <li><a href="https://www.sesetu2.com" target="_blank"><img src="images/img1.png" alt=""><span>色兔二站</span></a></li>
+      <li><a href="https://www.sesetu3.com" target="_blank"><img src="images/img1.png" alt=""><span>色兔三站</span></a></li>
+      <li><a href="https://www.sesetu4.com" target="_blank"><img src="images/img1.png" alt=""><span>色兔四站</span></a></li>
+      <li><a href="https://www.sesetu5.com" target="_blank"><img src="images/img1.png" alt=""><span>色兔五站</span></a></li>
+      <li><a href="https://www.sesetu.net" target="_blank"><img src="images/img1.png" alt=""><span>色兔六站</span></a></li>
+      <li><a href="https://www.baidu.com" target="_blank"><img src="images/img07.png" alt=""><span>百度</span></a></li>
+      <li><a href="https://www.ifeng.com" target="_blank"><img src="images/img08.png" alt=""><span>凤凰</span></a></li>
+      <li><a href="https://www.qq.com" target="_blank"><img src="images/img09.png" alt=""><span>腾讯</span></a></li>
+      <li><a href="http://www.sohu.com/" target="_blank"><img src="images/img10.png" alt=""><span>搜狐</span></a></li>
+      <li><a href="https://www.sina.com.cn" target="_blank"><img src="images/img11.png" alt=""><span>新浪</span></a></li>
+      <li><a href="https://www.163.com/" target="_blank"><img src="images/img12.png" alt=""><span>网易</span></a></li>
+      <li><a href="https://www.suning.com" target="_blank"><img src="images/img13.png" alt=""><span>苏宁</span></a></li>
+      <li><a href="https://www.58.com" target="_blank"><img src="images/img14.png" alt=""><span>同城</span></a></li>
+      <li><a href="https://lbsyun.baidu.com" target="_blank"><img src="images/img15.png" alt=""><span>百度地图</span></a></li>
+      <li><a href="https://www.ctrip.com/" target="_blank"><img src="images/img16.png" alt=""><span>携程</span></a></li>
+      <li><a href="https://www.iqiyi.com/" target="_blank"><img src="images/img17.png" alt=""><span>爱奇艺</span></a></li>
+      <li><a href="http://www.9ku.com" target="_blank"><img src="images/img18.png" alt=""><span>免费下</span></a></li>
+      <li><a href="https://www.jd.com" target="_blank"><img src="images/img19.png" alt=""><span>京东</span></a></li>
+      <li><a href="http://top.sogou.com/" target="_blank"><img src="images/img20.png" alt=""><span>热搜</span></a></li>
+      <li><a href="https://www.taobao.com" target="_blank"><img src="images/img21.png" alt=""><span>淘宝</span></a></li>
+      <li><a href="https://ai.m.taobao.com/" target="_blank"><img src="images/img22.png" alt=""><span>爱淘宝</span></a></li>
+      <li><a href="http://www.eastmoney.com/" target="_blank"><img src="images/img23.png" alt=""><span>东方财富</span></a></li>
+      <li><a href="http://www.4399.com/" target="_blank"><img src="images/img24.png" alt=""><span>4399</span></a></li>
+      <li><a href="https://temai.taobao.com" target="_blank"><img src="images/img25.png" alt=""><span>淘宝特卖</span></a></li>
+      <li><a href="https://www.anjuke.com" target="_blank"><img src="images/img26.png" alt=""><span>安居客</span></a></li>
+      <li><a href="https://www.12306.cn" target="_blank"><img src="images/img27.png" alt=""><span>12306</span></a></li>
+      <li><a href="https://www.renrenche.com" target="_blank"><img src="images/img28.png" alt=""><span>二手车</span></a></li>
+      <li><a href="https://www.qunar.com" target="_blank"><img src="images/img29.png" alt=""><span>去哪网</span></a></li>
+      <li><a href="https://haokan.baidu.com" target="_blank"><img src="images/img30.png" alt=""><span>好看视频</span></a></li>
+    </ul>
+    <div class="photo"><img src="images/photo01.jpg" alt=""></div>
+  </div>
+  <div id="footer">
+    <p class="copyright">COPYRIGHT © 2015-2020 SESETU.NET RESERVED</p>
+  </div>
+</div>
+<div style="display:none;"><script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?62da0253f50edfb9beea69c734c297a7";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</div>
+</body>
+</html>

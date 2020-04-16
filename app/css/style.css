@@ -1,0 +1,146 @@
+body {
+	font-family: 'STHeiti', 'Microsoft YaHei', Helvetica, Arial, sans-serif;
+	margin: 0 auto;
+	background: #fff;
+	color: #333;
+}
+img {
+	width: 100%;
+	vertical-align: top;
+}
+#container {
+	max-width: 750px;
+	margin: 0 auto;
+	background-color: #FFF;
+}
+#header {
+	margin-bottom: 0.1rem;
+}
+
+.topBox {
+	padding: 0.1rem;
+}
+#main {
+	margin: 0.45rem 0 0;
+}
+.imgUl {
+	margin: 0 0.1rem 0;
+}
+.imgUl li {
+	float: left;
+	width: 1.6rem;
+	height: 1.6rem;
+	margin: 0 0 0.3rem;
+}
+.imgUl li img {
+	margin-bottom: 0.2rem;
+	width: 0.8rem;
+}
+.imgUl li a {
+	color: #333;
+	font-size: 0.35rem;	
+	text-align: center;
+	display: block;
+}
+.imgUl li span {
+	display: block;
+}
+.imgUl li a:hover span {
+	color: #f00;
+}
+.textUl {
+	margin-bottom: 0.5rem;
+}
+.textUl li {
+	width: 2rem;
+	margin: 0.4rem 0 0;
+	text-align: center;
+	float: left;
+	font-size:0.35rem;
+}
+.textUl li a {
+	display: inline-block;
+	color: #333;
+}
+.textUl li a:hover {
+	color: #f00;
+}
+.photo {
+	border-top:0.2rem solid #EDEDED;
+	border-bottom:0.2rem solid #EDEDED;
+}
+.inner {
+	margin: 0.5rem;
+}
+.inner .tabUl {
+	margin-bottom: 0.6rem;
+}
+.inner .tabUl li {
+	display: inline-block;
+	margin-right: 0.7rem;
+	font-size: 0.42rem;
+}
+.inner .tabUl li a {
+	color: #333;
+	padding-bottom:0.15rem;
+}
+.inner .tabUl li.on a {
+	color: #24a500;
+	border-bottom: 2px solid #24a500;
+}
+.inner .tabBox {
+	margin: 0 0 0 0.4rem;
+}
+.inner .tabBox p {
+	margin-bottom: 0.5rem;
+	font-size: 0.38rem;
+}
+.inner .tabBox p span {
+	padding-right: 0.6rem;
+	display: inline-block;
+	position: relative;
+	color: #24a500;
+}
+.inner .tabBox p span:before {
+	content:"";
+	position: absolute;
+	top: 0;
+	right: 0.15rem;
+	width: 1px;
+	height: 0.5rem;
+	border-right: 1px solid #F2F2F2;
+}
+.inner .tabBox p a {
+	color: #333;
+	width: 1.8rem;
+	text-align: center;
+	display: inline-block;
+}
+.inner .tabBox p a:hover {
+	color: #24a500;
+}
+
+
+
+#footer {
+	background-color: #F5F5F5;
+	padding: 0.2rem 0;
+	text-align: center;
+}
+#footer .copyright {
+	color: #666;
+	font-size: 0.3rem;
+}
+@media all and (min-width: 767px) {
+	body {
+		background:#333;
+	}
+	.imgUl li {
+		float: left;
+		width: 16.66%;
+		margin: 0 0 0.3rem;
+	}
+
+	
+	
+}
